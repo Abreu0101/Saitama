@@ -1,14 +1,14 @@
 //
-//  SaitamaUITests.swift
+//  RentPlacesViewControllerUITest.swift
 //  SaitamaUITests
 //
-//  Created by Roberto Abreu on 11/25/17.
+//  Created by Roberto Abreu on 11/26/17.
 //  Copyright © 2017 homeappzz. All rights reserved.
 //
 
 import XCTest
 
-class SaitamaUITests: XCTestCase {
+class RentPlacesViewControllerUITest: XCTestCase {
         
     override func setUp() {
         super.setUp()

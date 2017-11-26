@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarkerInfoWindow" customModule="Saitama" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="108"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saitama Rent Place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmw-oO-Cpy">
+                    <rect key="frame" x="16" y="16" width="247" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPL-J3-cBI">
+                    <rect key="frame" x="16" y="50" width="247" height="38"/>
+                    <color key="backgroundColor" red="0.46344646810000001" green="0.68463611599999996" blue="0.51375806329999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="V86-cV-v61"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Rent">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="rentTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="S9e-hK-PYv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LPL-J3-cBI" secondAttribute="trailing" constant="16" id="E1b-7H-dSn"/>
+                <constraint firstItem="rmw-oO-Cpy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="LQx-Z6-F37"/>
+                <constraint firstItem="LPL-J3-cBI" firstAttribute="top" secondItem="rmw-oO-Cpy" secondAttribute="bottom" constant="14" id="Ry0-jl-hCa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rmw-oO-Cpy" secondAttribute="trailing" constant="16" id="Tgj-4y-Ob4"/>
+                <constraint firstItem="LPL-J3-cBI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="bQ2-hZ-YIk"/>
+                <constraint firstItem="rmw-oO-Cpy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="rGP-fu-yUM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lblName" destination="rmw-oO-Cpy" id="UfR-fg-T0S"/>
+            </connections>
+            <point key="canvasLocation" x="-172.5" y="-260"/>
+        </view>
+    </objects>
+</document>

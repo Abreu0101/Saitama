@@ -1,15 +1,14 @@
 //
-//  SaitamaTests.swift
+//  PaymentProviderTest.swift
 //  SaitamaTests
 //
-//  Created by Roberto Abreu on 11/25/17.
+//  Created by Roberto Abreu on 11/26/17.
 //  Copyright © 2017 homeappzz. All rights reserved.
 //
 
 import XCTest
-@testable import Saitama
 
-class SaitamaTests: XCTestCase {
+class PaymentProviderTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
